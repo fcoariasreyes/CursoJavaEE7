@@ -60,8 +60,8 @@ public class LoginServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("usuario", usuario);
 		
-		response.getWriter().append("<h1>Bienvenido "+usuario+" !!!</h1>");
-		
+		//response.getWriter().append("<h1>Bienvenido "+usuario+" !!!</h1>");
+		response.sendRedirect("principal.jsp");
 
 		
 	}
