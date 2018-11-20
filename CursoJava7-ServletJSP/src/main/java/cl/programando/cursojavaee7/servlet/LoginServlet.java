@@ -10,13 +10,13 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class HelloServlet
  */
-public class HelloServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public HelloServlet() {
+    public LoginServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
