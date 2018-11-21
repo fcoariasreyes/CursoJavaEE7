@@ -32,7 +32,7 @@ public class CerrarSesionServlet extends HttpServlet {
 		}else {
 			response.getWriter().append("<b>No se encontraba sesi&oacute;n abierta</b>");
 		}
-		response.getWriter().append(" <a href='HelloServlet'>Volver al inicio</a>");
+		response.getWriter().append(" <a href='index.jsp'>Volver al inicio</a>");
 
 		session.invalidate(); //matas la sesion
 	}

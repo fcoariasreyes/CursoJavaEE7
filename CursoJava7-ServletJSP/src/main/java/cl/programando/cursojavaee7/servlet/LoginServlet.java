@@ -10,44 +10,12 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class HelloServlet
  */
-public class LoginServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public LoginServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+public class LoginServlet extends BaseServlet{
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("<html>");
-		response.getWriter().append("<body>");
-		
-		HttpSession session = request.getSession();
-		
-		if (!session.isNew()) {
-			String usuario=(String)session.getAttribute("usuario");
-			response.getWriter().append("<b>Ya se encuentra activo el usuario "+usuario+"</b>");
-		
-		}
-		
-		response.getWriter().append("<form action='#' method='POST'>");
-		response.getWriter().append("<label>Usuario:</label>");
-		response.getWriter().append("<input type='text' id='usuario' name='usuario' />");
-		response.getWriter().append("<label>Clave:</label>");
-		response.getWriter().append("<input type='password' id='clave' name='clave'/>");
-		response.getWriter().append("<input type='submit' value='ingresar' />");
-		response.getWriter().append("</form>");
-		response.getWriter().append("</body>");
-		response.getWriter().append("</html>");
+	public LoginServlet() {
+		super("LOGIN");
 	}
-
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -59,6 +27,12 @@ public class LoginServlet extends HttpServlet {
 		//Guardamos en sesion el usuario
 		HttpSession session = request.getSession();
 		session.setAttribute("usuario", usuario);
+		
+		if (usuario.equalsIgnoreCase("admin"))
+			session.setAttribute("privilegio", "ADMIN");
+		else
+			session.setAttribute("privilegio", "USER");
+		
 		
 		//response.getWriter().append("<h1>Bienvenido "+usuario+" !!!</h1>");
 		response.sendRedirect("principal.jsp");

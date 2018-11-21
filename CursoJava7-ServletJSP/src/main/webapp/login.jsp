@@ -15,7 +15,5 @@
 		<input type="password" id="clave" name="clave" />
 		<input type="submit" value="Ingresar"/>
 	</form>
-
-
 </body>
 </html>
