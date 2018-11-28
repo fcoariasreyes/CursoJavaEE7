@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="CursoJava7-ServletJSP" path="/CursoJava7-ServletJSP" reloadable="true" source="org.eclipse.jst.j2ee.server:CursoJava7-ServletJSP"/><Context docBase="CursoJavaEE7-JSF" path="/simple-webapp" reloadable="true" source="org.eclipse.jst.jee.server:CursoJavaEE7-JSF"/><Context docBase="CursoJavaEE7-SOAPWS" path="/CursoJavaEE7-SOAPWS" reloadable="true" source="org.eclipse.jst.j2ee.server:CursoJavaEE7-SOAPWS"/></Host>
+      <Context docBase="CursoJava7-ServletJSP" path="/CursoJava7-ServletJSP" reloadable="true" source="org.eclipse.jst.j2ee.server:CursoJava7-ServletJSP"/><Context docBase="CursoJavaEE7-JSF" path="/simple-webapp" reloadable="true" source="org.eclipse.jst.jee.server:CursoJavaEE7-JSF"/><Context docBase="CursoJavaEE7-SOAPWS" path="/CursoJavaEE7-SOAPWS" reloadable="true" source="org.eclipse.jst.j2ee.server:CursoJavaEE7-SOAPWS"/><Context docBase="ProyectoEjemploMavenWeb" path="/ProyectoEjemploMavenWeb" reloadable="true" source="org.eclipse.jst.j2ee.server:ProyectoEjemploMavenWeb"/></Host>
     </Engine>
   </Service>
 </Server>
