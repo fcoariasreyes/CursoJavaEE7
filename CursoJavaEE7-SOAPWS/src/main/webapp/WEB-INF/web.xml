@@ -4,11 +4,11 @@ Inc.//DTD Web Application 2.3//EN"
 "http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
 
 <web-app>
-	<listener>
+	 <listener>
 		<listener-class>
 			com.sun.xml.ws.transport.http.servlet.WSServletContextListener
 		</listener-class>
-	</listener>
+	</listener> 
 	<servlet>
 		<servlet-name>sayhello</servlet-name>
 		<servlet-class>

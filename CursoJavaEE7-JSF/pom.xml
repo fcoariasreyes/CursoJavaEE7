@@ -8,6 +8,14 @@
   <artifactId>CursoJavaEE7-JSF</artifactId>
   <packaging>war</packaging>
   <name>Simple Web Application</name>
+  <repositories>
+    <repository>
+        <id>prime-repo</id>
+        <name>PrimeFaces Maven Repository</name>
+        <url>https://repository.primefaces.org</url>
+        <layout>default</layout>
+    </repository>
+</repositories>
   <dependencies>
     <dependency>
       <groupId>org.apache.geronimo.specs</groupId>
@@ -53,6 +61,11 @@
 	    	<groupId>org.primefaces</groupId>
 	    	<artifactId>primefaces</artifactId>
 	    	<version>6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>cupertino</artifactId>
+			<version>1.0.10</version>
 		</dependency>
   </dependencies>
   <build>

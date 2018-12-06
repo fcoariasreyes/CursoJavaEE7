@@ -28,5 +28,6 @@
 			<attribute name="javadoc_location" value="https://docs.oracle.com/javaee/3/api/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/cupertino-1.0.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
