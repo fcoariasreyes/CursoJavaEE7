@@ -3,5 +3,5 @@
 	version="2.0">
 	<endpoint name="WebServiceImpl"
 		implementation="cl.programando.cursojavaee7.soapws.WebServiceImpl"
-		url-pattern="/sayhello" />
+		url-pattern="/indicadoresEconomicos" />
 </endpoints>

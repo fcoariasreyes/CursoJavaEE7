@@ -10,15 +10,15 @@ Inc.//DTD Web Application 2.3//EN"
 		</listener-class>
 	</listener> 
 	<servlet>
-		<servlet-name>sayhello</servlet-name>
+		<servlet-name>indicadoresEconomicos</servlet-name>
 		<servlet-class>
 			com.sun.xml.ws.transport.http.servlet.WSServlet
 		</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>sayhello</servlet-name>
-		<url-pattern>/sayhello</url-pattern>
+		<servlet-name>indicadoresEconomicos</servlet-name>
+		<url-pattern>/indicadoresEconomicos</url-pattern>
 	</servlet-mapping>
 	<session-config>
 		<session-timeout>30</session-timeout>
