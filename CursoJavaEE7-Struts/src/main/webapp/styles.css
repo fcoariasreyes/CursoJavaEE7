@@ -1,0 +1,10 @@
+.error{
+	border-radius:5px;
+	border: 1px solid red;
+	background-color: #F6CED8;
+	width: 30%;
+}
+
+.error span{
+	text-color: red;
+}

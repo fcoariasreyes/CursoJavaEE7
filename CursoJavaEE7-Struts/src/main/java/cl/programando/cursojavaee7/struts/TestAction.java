@@ -15,11 +15,14 @@ public class TestAction extends ActionSupport
     public void validate(){
         if (name==null || name.length()==0)
             addActionError(getText("error.enter.message"));
+        
     }
 
     @Override
     public String execute() throws Exception {
-        nowDate = new Date();
+        if (this.nowDate==null)
+        	nowDate = new Date();
+        
         return ActionSupport.SUCCESS;
     }
 
