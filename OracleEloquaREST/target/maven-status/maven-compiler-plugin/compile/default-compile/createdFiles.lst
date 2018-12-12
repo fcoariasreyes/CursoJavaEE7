@@ -1,0 +1,6 @@
+cl/programando/oracleeloquarest/entity/ActionServiceEntity.class
+cl/programando/oracleeloquarest/configuration/AppInitializer.class
+cl/programando/oracleeloquarest/entity/AppCloudEntity.class
+cl/programando/oracleeloquarest/controller/interfaces/OracleEloquaAppCloudActionService.class
+cl/programando/oracleeloquarest/configuration/AppConfig.class
+cl/programando/oracleeloquarest/controller/OracleEloquaSMSController.class

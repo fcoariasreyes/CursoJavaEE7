@@ -7,13 +7,17 @@
 <struts>
 	<include file="struts-default.xml"/>
 	<package name="default" extends="struts-default">
+	    <result-types>
+		  <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+		</result-types>
 	    <action name="">
             <result>/WEB-INF/jsp/index.jsp</result>
         </action>
 	   <action name="testAction" class="cl.programando.cursojavaee7.struts.TestAction">
-	      <result name="input">/WEB-INF/jsp/index.jsp</result>
-	      <result name="success">/WEB-INF/jsp/success.jsp</result>
-	      <result name="error">/WEB-INF/jsp/index.jsp</result>
+	      <result name="input" >/WEB-INF/jsp/index.jsp</result>
+	      <result name="success" type="tiles">principal</result>
+	      <result name="error" >/WEB-INF/jsp/index.jsp</result>
 	   </action>
+	   
 	</package>
 </struts>

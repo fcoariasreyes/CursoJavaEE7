@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+   <definition name="base-definition_extern" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayoutExtern.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="body" value="" />  
+   </definition>  
+   <!-- Home Page Dashboard -->
+   <definition name="configuration" extends="base-definition_extern">  
+       <put-attribute name="title" value="Configuracition" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/configuration.jsp" />  
+   </definition>  
+
+   <!-- ERROR 404 -->
+   <definition name="no_autorizado" extends="base-definition">  
+       <put-attribute name="title" value="404" />  
+       <put-attribute name="body" value="/WEB-INF/views/messages/error_404.jsp" />  
+   </definition> 
+ 
+</tiles-definitions>
