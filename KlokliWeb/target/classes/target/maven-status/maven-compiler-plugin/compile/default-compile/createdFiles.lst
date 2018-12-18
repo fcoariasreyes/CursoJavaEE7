@@ -1,0 +1,4 @@
+cl/programando/klokli/web/configuration/AppInitializer.class
+cl/programando/klokli/web/controller/BaseController.class
+cl/programando/klokli/web/configuration/AppConfig.class
+cl/programando/klokli/web/controller/interfaces/OracleEloquaAppCloudActionService.class
